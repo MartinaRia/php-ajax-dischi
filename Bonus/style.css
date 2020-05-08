@@ -34,6 +34,29 @@ header img {
     padding: 100px 0;
 }
 
+.filter {
+    width: calc(240px * 4);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#selection{
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 3px solid rgb(46, 58, 70);
+  color: white;
+  font-weight: bold;
+}
+#selection option{
+  background: rgb(46, 58, 70);
+  padding: 15px;
+  font-family: inherit;
+  font-weight: bold;
+}
+
 .cd {
     display: flex;
     justify-content: flex-start;
@@ -45,6 +68,7 @@ header img {
     height: 360px;
     background: rgb(46, 58, 70);
     text-align: center;
+    transition: translate 1s linear;
 }
 
 .cd img {
@@ -65,4 +89,8 @@ header img {
 
 .cd span.year {
     color: grey;
+}
+
+.cd span.genere {
+    display: none;
 }

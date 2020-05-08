@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Ex-dischi-musicali</title>
+        <title>Bonus-dischi-musicali</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -17,15 +17,26 @@
 
         <div class="cds-container container">
 
+          <div class="filter">
+            <select id="selection">
+              <option value="all">SELEZIONA UN GENERE</option>
+              <option value="Pop">POP</option>
+              <option value="Rock">ROCK</option>
+              <option value="Metal">METAL</option>
+              <option value="Jazz">JAZZ</option>
+            </select>
+          </div>
+
           <script id="template-handlebars" type="text/x-handlebars-template">
             <div class="cd">
                 <img src="{{img}}" alt="">
                 <h3> {{title}}</h3>
                 <span class="author">{{author}}</span>
                 <span class="year">{{year}}</span>
+                <span class="genere">{{genere}}</span>
             </div>
           </script> <!--/  template handlebars -->
-          
+
         </div>
 
 
